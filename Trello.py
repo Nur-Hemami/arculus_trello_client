@@ -47,7 +47,6 @@ class Trello:
             url,
             params=query
             )
-
             if response.status_code == 200:
                 print("Card added successfully")
             else:
