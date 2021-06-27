@@ -20,6 +20,7 @@ class Trello:
             self.lists = self._get_lists()
             for key in self.lists:
                 print(" - Name: {}, id: {}".format(key, self.lists[key]))
+            print("")
             
 
         
