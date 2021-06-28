@@ -46,3 +46,7 @@ jobs:
       - run:
           name: Build Docker image
           command: docker build -t $IMAGE_NAME:latest .
+      - run:
+          name: Running the docker image
+          command: docker run -i -t $IMAGE_NAME
+      
