@@ -85,3 +85,10 @@ Card added successfully
 ```
 
 The docker image app is set to add the cards that are specified in the example.csv file with no interaction of the user, this makes possible to have docker in an automated manner.
+The automated package building + deplyoing is set in the CircleCI platform. This is configured taking the .circleci/config.yaml file that is in this repository where the pipeline is defined.
+
+Everytime that a pull request is generated in this repository, the pipeline is triggered, building and deploying the docker image:
+
+![alt text](./images/example3.png)
+
+This can be accessed through the section "checks" under each pull request.
